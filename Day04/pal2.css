@@ -1,0 +1,48 @@
+.d1{
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+.a{
+  background: salmon;
+}
+.b{
+  background: skyblue;
+}
+.c{
+  background: slateblue;
+}
+.d{
+  background: sandybrown;
+}
+.e{
+  background: aquamarine;
+}
+.f{
+  background: gold;
+}
+.g{
+  background: silver;
+}
+.h{
+  background: hotpink;
+}
+.d1>div{
+  width: 250px;
+  height: 100px;
+}
+p{
+  font-family: "Playwrite US Trad", cursive;
+  font-optical-sizing: auto;
+}
+@font-face {
+  font-family: 'HS-Regular';
+  src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+b{
+  font-family: 'HS-Regular';
+  font-weight: 200;
+  font-size: 3em;
+}
