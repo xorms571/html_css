@@ -1,0 +1,53 @@
+.f1{
+  background: skyblue;
+}
+.f2{
+  background: salmon;
+}
+.f3{
+  background: sandybrown;
+}
+.f4{
+  background: aquamarine;
+}
+.f5{
+  background: gainsboro;
+}
+.d1>div{
+  width: 100px;
+  height: 100px;
+}
+.d1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 1000px;
+  height: 1000px;
+}
+.contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contents>div{
+  background: black;
+  margin: 5px 0;
+  color: white;
+  width: 500px;
+  text-align: start;
+  padding: 20px 25px;
+  font-size: 2em;
+}
+.btns{
+  display: flex;
+  gap: 5px;
+}
+.btns>div{
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-weight: bold;
+}

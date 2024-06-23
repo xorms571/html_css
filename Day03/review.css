@@ -1,0 +1,14 @@
+.moto{
+  font-size: 30px;
+  text-align: center;
+}
+.ment{
+  font-size: 20px;
+  text-align: center;
+}
+.button{
+  border: 1px solid gray;
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+}
