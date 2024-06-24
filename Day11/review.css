@@ -1,0 +1,48 @@
+.con1 {
+  background: linear-gradient(to top, #331f1f, #d38c52);
+  color: white;
+  margin: 20px;
+  border-radius: 30px;
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.con1 > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.con1 > .tex-box {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.con1 > .tex-box > h3 {
+  font-size: 1.2em;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.con1 > .menu {
+  width: 90%;
+  text-align: center;
+}
+.con1 > .menu > p {
+  background: white;
+  color: black;
+  padding: 20px 0;
+  border-radius: 40px;
+  font-weight: 700;
+}
+.con1 > .menu > p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.icon {
+  margin-top: 40px;
+  font-size: 2em;
+}
+.icon > i:nth-child(2) {
+  margin: 0 10px;
+}
