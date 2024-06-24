@@ -1,0 +1,50 @@
+.pfp{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.pfp>div{
+  padding: 20px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+.header>h2{
+  font-weight: 100;
+}
+.menu{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 90vh;
+  background-size: cover;
+  background-image: url('https://support.snosites.com/hc/article_attachments/115003060034');
+}
+.main>h3{
+  text-align: center;
+  font-size: 2em;
+}
+.btn{
+  background: rgb(255, 58, 58);
+  color: aliceblue;
+  font-size: .8em;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(255, 58, 58);
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+}

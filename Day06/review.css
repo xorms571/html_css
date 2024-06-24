@@ -1,0 +1,108 @@
+.head{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.head>h2{
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.letter{
+  background: gray;
+  color: white;
+  padding: 4px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  font-size: .8em;
+}
+.letter>p{
+  margin-right: 5px;
+}
+.letter>.circle{
+  background: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+.btns{
+  display: flex;
+  align-items: center;
+}
+.btns>i:first-child{
+  margin-right: 15px;
+}
+.btns>i{
+  font-size: 1.5em;
+}
+.search{
+  display: flex;
+  flex-direction: column;
+  background: blue;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+.search>div{
+  border-radius: 5px;
+  padding: 10px;
+  background: white;
+  color: gray;
+}
+.search>div>input{
+  border: none;
+  background: none;
+  width: 90%;
+}
+.search>div>i{
+  width: 5%;
+}
+.search>hr{
+  width: 100%;
+  margin: 20px 0;
+}
+.menus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 20px;
+}
+.menus>div{
+  width: 15%;
+  padding: 10px;
+}
+.menus>div>i{
+  margin: 10px;
+  font-size: 2em;
+}
+.test{
+  display: flex;
+  margin: 0 10px;
+  color: white;
+  text-shadow: 1px 1px 1px #000;
+}
+.test>div{
+  padding: 20px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 10px;
+  background-size: cover;
+  background-image: url('https://www.wyndhamhotels.com/content/dam/creative-images/apac/flat/1x1/apac_1x1_57994_gr__kien_giang_province.jpg?downsize=700:*');
+}
+.test>div>span{
+  font-size: .7em;
+  border-bottom: 1px solid #fff;
+}
+.test>div>h2{
+  margin: 15px 0;
+  line-height: 120%;
+}
+.test>div>p{
+  font-size: .8em;
+  line-height: 120%;
+}
