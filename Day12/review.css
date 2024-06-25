@@ -1,0 +1,199 @@
+body{
+    height: 2000px;
+}
+header{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    border-bottom: 1px solid #000;
+}
+.top{
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.top>h2{
+    font-size: 2em;
+    font-weight: 900;
+}
+.top i{
+    font-size: 120%;
+}
+nav{
+    width: 70%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: gray;
+    position: sticky;
+}
+nav>p{
+    width: 10%;
+}
+nav>p:hover{
+    font-weight: 700;
+}
+main{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.con{
+    width: 80%;
+    margin: 0 auto;
+}
+.first{
+    width: 100%;
+    height: 65vh;
+    position: relative;
+}
+.first>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.first>div{
+    position: absolute;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+}
+.fist-bottom{
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    width: calc(80% - 40px);
+}
+.bellIcon, .userIcons{
+    width: 20%;
+}
+.userIcons{
+    text-align: end;
+}
+.out{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+.out>div{
+    background: rgba(0, 0, 0, .4);
+    color: white;
+    margin: 10px 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.out>div>i,.out>div>p{
+    font-size: 100%;
+    padding: 5px;
+}
+.out>div:last-child{
+    background: #000
+}
+.userIcons>i:first-child{
+    margin-right: 10px;
+}
+
+.click{
+    cursor: pointer;
+}
+
+.mostOut{
+    background: #000;
+    color: #fff;
+    bottom: 0;
+    padding:20px 40px;
+    margin: 0 10%;
+    display: flex;
+    width: calc(80% - 80px);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.outItem{
+    text-align: center;
+}
+.outItem>i{
+    font-size: 100%;
+    margin-bottom: 8px;
+}
+.outItem>p{
+    font-size: .7em;
+}
+.first>div>div:first-child>h3{
+    font-size: 1.2em;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.first>div>div:first-child>p{
+    font-size: .8em;
+}
+.slider-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+@media (min-width: 800px) {
+    .first>img{
+        background: black;
+        object-fit: contain;
+    }
+}
+@media (max-width: 800px) {
+    .con{
+        width: 100%;
+    }
+    .fist-bottom{
+        width: calc(100% - 40px);
+    }
+    .top{
+        width: 90%;
+    }
+    nav{
+        width: 90%;
+    }
+    .mostOut{
+        margin: 0;
+        width: calc(100% - 40px);
+        padding:10px 20px;
+    }
+}

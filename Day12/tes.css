@@ -1,0 +1,21 @@
+.con{
+    display: flex;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+.r{
+    background: red;
+}
+.g{
+    background: yellow;
+}
+.b{
+    background: blue;
+}
+@media screen and (max-width:800px) {
+    .con{
+        flex-direction: column;
+    }
+}

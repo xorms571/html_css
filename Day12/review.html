@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../common/reset.css" />
+    <link rel="stylesheet" href="./review.css" />
+    <script
+      src="https://kit.fontawesome.com/4cb66a5bcd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="bellIcon">
+          <i class="fa-regular fa-bell click"></i>
+        </div>
+        <h2 class="click">MUSINSA</h2>
+        <div class="userIcons">
+          <i class="fa-solid fa-magnifying-glass click"></i>
+          <i class="fa-solid fa-basket-shopping click"></i>
+        </div>
+      </div>
+      <nav>
+        <p class="click">aaa</p>
+        <p class="click">bbb</p>
+        <p class="click">ccc</p>
+        <p class="click">cccvsd</p>
+        <p class="click">cccvs</p>
+        <p class="click">ccsdfhs</p>
+        <p class="click">ccsdf</p>
+      </nav>
+    </header>
+    <main>
+      <div class="con slider click">
+        <div class="first slide">
+          <img
+            src="https://image.msscdn.net/images/plan_top_img/2024062109315600000031604.jpg"
+            alt=""
+          />
+          <div>
+            <div>
+              <h3>무무무신dfg라네</h3>
+              <p>히하ㅣ히히히히히히히</p>
+            </div>
+            <div>
+              <p>1/22</p>
+            </div>
+          </div>
+        </div>
+        <div class="first slide">
+          <img
+            src="https://image.msscdn.net/images/livecommerce/2024061716134200000019041.jpg"
+            alt=""
+          />
+          <div>
+            <div>
+              <h3>무무무신dsfgh네</h3>
+              <p>히sdfg히히</p>
+            </div>
+            <div>
+              <p>2/22</p>
+            </div>
+          </div>
+        </div>
+        <div class="first slide">
+          <img
+            src="https://image.msscdn.net/images/livecommerce/2024061915104200000035563.jpg"
+            alt=""
+          />
+          <div>
+            <div>
+              <h3>무무sdfhjhjjjjjjjjjj네</h3>
+              <p>히하sdfh히히히</p>
+            </div>
+            <div>
+              <p>3/22</p>
+            </div>
+          </div>
+        </div>
+        <div class="first slide">
+          <img
+            src="https://image.msscdn.net/images/livecommerce/2024062109594900000048097.jpg"
+            alt=""
+          />
+          <div>
+            <div>
+              <h3>무무sdfh라네</h3>
+              <p>히하ㅣ히히fgdjh히히</p>
+            </div>
+            <div>
+              <p>4/22</p>
+            </div>
+          </div>
+        </div>
+        <div class="first slide">
+          <img
+            src="https://image.msscdn.net/images/livecommerce/2024061815503400000079789.jpg"
+            alt=""
+          />
+          <div>
+            <div>
+              <h3>무무무sdfh네</h3>
+              <p>히하ㅣshdf히</p>
+            </div>
+            <div>
+              <p>5/22</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-buttons">
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>
+      </div>
+      <div class="fist-bottom">
+        <h4 class="click">gggggg</h4>
+        <p class="click">전체</p>
+      </div>
+    </main>
+    <div class="out">
+      <div>
+        <i class="fa-solid fa-chevron-up click"></i>
+      </div>
+      <div>
+        <i class="fa-solid fa-clock-rotate-left click"></i>
+      </div>
+      <div>
+        <p class="click">전체</p>
+      </div>
+    </div>
+    <div class="mostOut">
+      <div class="outItem click">
+        <i class="fa-solid fa-bars"></i>
+        <p>전체</p>
+      </div>
+      <div class="outItem click">
+        <i class="fa-solid fa-wifi"></i>
+        <p>ㄹㄹ</p>
+      </div>
+      <div class="outItem click">
+        <i class="fa-brands fa-squarespace"></i>
+        <p>ㅈㅈ</p>
+      </div>
+      <div class="outItem click">
+        <i class="fa-solid fa-hashtag"></i>
+        <p>ㅛㅛ</p>
+      </div>
+      <div class="outItem click">
+        <i class="fa-regular fa-compass"></i>
+        <p>ㄱㄷ</p>
+      </div>
+    </div>
+  </body>
+  <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slideCount = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[n].style.display = 'block';
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slideCount;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+            showSlide(currentSlide);
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+            setInterval(nextSlide, 3000); // 3초마다 자동 슬라이드
+
+            document.getElementById('nextBtn').addEventListener('click', nextSlide);
+            document.getElementById('prevBtn').addEventListener('click', prevSlide);
+        });
+    </script>
+</html>
