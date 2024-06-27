@@ -1,0 +1,155 @@
+.con1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #111;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+.btns1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.btn {
+  text-align: center;
+}
+.btn > img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.btn > p {
+  margin: 20px 0;
+}
+.btn:nth-child(2) {
+  margin: 0 50px;
+}
+.con2 {
+  background: #0c1c3e;
+  color: #fff;
+}
+.con2 > header {
+  background: #0f224a;
+  width: calc(100vw -100px);
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2em;
+  height: 10vh;
+}
+.con2 > header > h2 > img,
+.con2 > header > p > svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.mb-btn {
+  width: 100px;
+}
+.con2 > header > h2 {
+  width: 200px;
+}
+.lang {
+  border: 5px solid #24cbaa;
+  padding: 15px;
+  border-radius: 50px;
+  font-weight: 900;
+  font-size: 0.7em;
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+.lang > span {
+  color: yellow;
+}
+.con2 > header > nav {
+  display: flex;
+}
+.con2 > header > nav > p {
+  margin: 0 20px;
+}
+.main-video {
+  background: #0f224a;
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.main-video > video {
+  background: #fff;
+  padding: 50px;
+  width: 60%;
+}
+@media screen and (max-width: 2000px) {
+  .lang,
+  .con2 > header > nav {
+    display: none;
+  }
+  .main-video {
+    width: 100%;
+  }
+  .main-video > video {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .mb-btn {
+    display: none;
+  }
+}
+
+.news {
+  padding: 10% 0;
+  background: #0f224a;
+  background-image: url("https://uoohs2.github.io/pokemongo/images/fire2.png");
+  background-position: center;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.news > h2 {
+  font-size: 3em;
+  margin-bottom: 50px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.item {
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.item:hover > img {
+  scale: 1.2;
+}
+.item > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s;
+}
+.item > h3 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  padding: 10px;
+}
+.item:first-child,
+.item:nth-child(2) {
+  width: 49%;
+  margin-bottom: 2%;
+}
+.item:nth-child(n + 3) {
+  width: 32%;
+}
