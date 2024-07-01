@@ -1,0 +1,79 @@
+body{
+    font-family: 'S-CoreDream-3Light';
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+}
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+header>h1{
+    width: 20%;
+    cursor: pointer;
+}
+.tab{
+    color: #fff;
+}
+.tab>p{
+    background: rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.con1{
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwoJsIngTvpXsKIv5bwg6D5YDsydIf7BqGp_H9HNGZKtouPySnMwNO-hwIR3sXcFEjWX4&usqp=CAU');
+}
+.text-box>p{
+    margin: 30px 0;
+}
+.text-box{
+    width: 80%;
+}
+.text-box>h2{
+    font-size: 3em;
+    font-weight: 900;
+}
+.text-box>p{
+    font-size: 1.5em;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.btns>div>p{
+    display: inline;
+}
+.btns>div{
+    background: rgba(0, 0, 0, .2);
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.btns>div:first-child{
+    margin-right: 20px;
+}
+.apple>i{
+    font-size: 1.2em;
+}
+.tab>p:hover,.btns>div:hover{
+    background: rgba(0, 0, 0, .4);
+}
