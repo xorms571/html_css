@@ -3,7 +3,7 @@ header{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 1% 10%;
+    padding: 0 10%;
     background: #fff;
     font-weight: 900;
     position: fixed;
@@ -13,10 +13,16 @@ header>nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
 }
 header>nav>p{
     cursor: pointer;
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    transition: all .2s;
+}
+header>nav>p:hover{
+    background: rgba(0, 0, 0, .2);
 }
 .logo{
     font-size: 1.5em;
@@ -60,4 +66,22 @@ header>nav>p{
     opacity: 0.9;
     filter: brightness(.2);
     object-fit: cover;
+}
+.con2{
+    height: 100vh;
+}
+.con2>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.con2>div>h2{
+    margin-left: 10%;
+}
+.con2>div>.items{
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
