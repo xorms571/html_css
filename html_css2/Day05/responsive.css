@@ -1,0 +1,26 @@
+:root{
+    /* color */
+    --col-blue01 : #2379ff; 
+    --col-blue02 : #002765; 
+    --col-blue03 : #d8f3ff; 
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+.ham{
+    display: none;
+}
+.con>nav{
+    padding: 20px;
+    background-color: var(--col-blue02);
+    color: var(--col-blue03);
+}
+@media screen and (max-width:768px) {
+    .links{
+        display: none ;
+    }
+    .ham{
+        display: inline ;
+    }
+}
