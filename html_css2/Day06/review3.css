@@ -1,0 +1,95 @@
+body {
+  position: relative;
+}
+.tcl-asset {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 10%;
+  color: #fff;
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+}
+header > svg {
+  width: 120px;
+  cursor: pointer;
+}
+nav > ul {
+  display: flex;
+  gap: 40px;
+  font-weight: 900;
+}
+nav > ul > li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.btns {
+  width: 120px;
+  font-size: 1.3em;
+  text-align: end;
+}
+.btns > i{
+    cursor: pointer;
+}
+.btns > i:not(:last-child) {
+  margin-right: 10px;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.title > h2 {
+  font-size: 3em;
+}
+main>button {
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  padding: 5px 80px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 4px;
+}
+main>button:hover {
+  background: #fff;
+  color: #000;
+}
+.sm{
+    display: none;
+}
+.sm>button{
+    padding: 5px 20px;
+    background: rgba(0, 0, 0, .2);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+@media screen and (max-width:1200px) {
+    header>nav{
+        display: none;
+    }
+    header>.btns{
+        display: none;
+    }
+    .sm{
+        display: block;
+    }
+}
