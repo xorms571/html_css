@@ -11,7 +11,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 10%;
+  padding: 10px 10%;
   color: #fff;
   position: fixed;
   z-index: 1;
@@ -91,5 +91,8 @@ main>button:hover {
     }
     .sm{
         display: block;
+    }
+    main{
+        width: 90%;
     }
 }
